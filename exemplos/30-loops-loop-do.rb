@@ -11,7 +11,8 @@
 numero = 1
 loop do
     puts numero
-    numero = numero + 1
+    # numero = numero + 1
+    numero += 1
     if numero > 10
         break
     end
