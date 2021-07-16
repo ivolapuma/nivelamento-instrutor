@@ -26,15 +26,12 @@ end
 puts "depois do until..."
 puts numero
 
-
-
-
 # puts "imprimindo com for"
 
-# for numero in (1..numero_limite)
-#     puts numero
-#     # numero = numero + 1 # que o for vai fazer isso implicitamente
-# end
+for numero in (1..numero_limite)
+    puts numero
+    # numero = numero + 1 # que o for vai fazer isso implicitamente
+end
 
 # # imprimindo de 1 até 10
 # for numero in (1..10)
