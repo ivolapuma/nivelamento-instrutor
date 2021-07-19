@@ -31,5 +31,5 @@ aposta = [ 10, 14, 20, 9, 16, 22 ]
 puts existe_no_array(aposta, 25)
 puts existe_no_array(aposta, 9)
 
-numeros_quaisquer = [ 0, 10, 20, 30 ]
+numeros_quaisquer = [ 0, 10, 20, 30, 0, 0, 0, 0, 0 ]
 puts existe_no_array(numeros_quaisquer, 10)
