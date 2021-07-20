@@ -111,4 +111,7 @@ insere_no_inicio(numeros, 50)
 exibe_array(numeros)
 puts numeros.size
 
+#
+# numeros = x1
+#
 
