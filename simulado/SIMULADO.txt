@@ -1,0 +1,81 @@
+SIMULADO
+
+
+No repositório 'nivelamento-aluno' de cada aluno, deve ser criada uma pasta chamada 'simulado'. Dentro desta pasta, devem ser adicionadas as resoluções de cada questão separadamente.
+Ex.: para a questão 1, enviar a resolução no arquivo 01-simulado.rb; para a questão 2, enviar 02-simulado.rb; e assim, respectivamente, para as demais questões. 
+
+
+1) Cada maça custa R$ 0,30, porém, se levar uma dúzia ou mais, o preço de cada uma baixa para R$ 0,25. 
+
+Considerando essa precificação, escreva uma função chamada "preco_maca" que deve receber como parâmetro a quantidade de maçãs e deve retornar o valor em reais a ser pago por elas.
+
+Valide se a quantidade é um número maior que zero, se não for, a função deve retornar nil.
+
+puts(preco_maca(6)) # deve imprimir 1.8 ou 1.799999...
+puts(preco_maca(12)) # deve imprimir 3.0
+puts(preco_maca(10)) # deve imprimir 3.0
+
+
+2) Defina uma função chamada “negativos_positivos”, que deve receber um array de números e que deve retornar outro array com os seguintes 3 números:
+
+1. Na primeira posição, o percentual de números do array que são positivos
+2. Na segunda posição, o percentual de números do array que são zero
+3. Na última posição, o percentual de números do array que são negativos
+
+
+print(negativos_positivos([1, 2, 0, -1]))
+print("\n")
+# deve imprimir o array [0.5, 0.25, 0.25]
+# pois há 50% de números positivos no array, 25% de números zero e 25% de números negativos
+
+
+3) Escreva uma função chamada "calcula_media" que deve receber um array de números como parâmetro e deve retornar o valor da média aritmética entre todos os números do array.
+
+
+puts(calcula_media([1, 2, -1, 3, 0, 7]))  # deve imprimir 2.0
+
+
+
+4) Defina uma função chamada “imprimir_tabela”, que deve receber um número inteiro como parâmetro e deve imprimir na tela uma tabela de números seguindo a seguinte regra:
+
+1
+2 4
+3 6 9
+...
+n*1 n*2 n*3 ... n*n
+
+Valide se o parâmetro é um número maior que zero, se não for, a função deve imprimir na tela "ARGUMENTO INVÁLIDO"
+
+
+imprimir_tabela(5) # deve ser impresso na tela a seguinte tabela:
+
+ 1
+ 2 4
+ 3 6 9
+ 4 8 12 16
+ 5 10 15 20 25
+
+imprimir_tabela(0) # deve ser impresso na tela: 
+ARGUMENTO INVÁLIDO
+
+
+5) Faça uma função chamada 'mediana' que recebe um array de números e retorna a mediana entre eles.
+
+
+Lembrando que para obter a mediana de uma série de números, é necessário ordenar a série (usar a função sort()) e retornar:
+
+- se a série tiver um número (n) ímpar de elementos, retornar o número da posição n/2 (a parte inteira);
+- e caso se a série tiver um número (n) par de elementos, retornar a média entre os números das posições (n/2)-1 e (n/2)
+
+Ex.: 
+
+puts(mediana([10, 0, -1, -500, 20, 100])) # deve imprimir 5.0
+puts(mediana([10, 0, -1, -500, 20]))      # deve imprimir 0.0
+
+
+6) Faça uma função chamada 'menor_maior' que recebe um array de números e que deve retornar outro array, contendo apenas 2 elementos: o primeiro deve ser o menor número do array informado e o segundo deve ser o maior.
+
+Ex.:
+
+print(menor_maior([10, 0, -1, -500, 20, 100])) # deve imprimir [-500, 100]
+puts
